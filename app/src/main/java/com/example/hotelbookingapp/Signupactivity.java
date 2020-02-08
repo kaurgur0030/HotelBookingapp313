@@ -35,7 +35,7 @@ import android.widget.TextView;
                 ed3=findViewById(R.id.editText3);
                 b1=findViewById(R.id.button11);
                 b2= findViewById(R.id.button);
-               
+
                 sp= getSharedPreferences(MyPREFERENCES,MODE_PRIVATE);
                 b1.setOnClickListener(new View.OnClickListener() {
                     @Override
