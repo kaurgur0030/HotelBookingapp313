@@ -24,7 +24,7 @@ public class LoginActivity extends AppCompatActivity {
 
         public class Main2Activity extends AppCompatActivity {
             TextView t11;
-            Button b3, b4;
+            Button b3, b4, b5;
             ConstraintLayout l1;
             String name, password, email, savedemail;
             SharedPreferences sp;
@@ -41,6 +41,7 @@ public class LoginActivity extends AppCompatActivity {
                 ed2 = findViewById(R.id.editText3);
                 b3 = findViewById(R.id.button11);
                 b4 = findViewById(R.id.button3);
+                b5 = findViewById(R.id.button5);
 
 
 
@@ -70,6 +71,17 @@ public class LoginActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         i = new Intent(LoginActivity.this, Signupactivity.class);
+                        startActivity(i);
+
+                    }
+
+
+
+                });
+                b5.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        i = new Intent(LoginActivity.this, ReviewActivity .class);
                         startActivity(i);
 
                     }
