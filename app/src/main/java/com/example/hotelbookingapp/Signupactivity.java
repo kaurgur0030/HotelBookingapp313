@@ -29,7 +29,8 @@ import android.widget.TextView;
             @Override
             protected void onCreate(Bundle savedInstanceState) {
                 super.onCreate(savedInstanceState);
-                setContentView(R.layout.activity_main);
+                setContentView(R.layout.activity_signupactivity);
+
                 ed1=findViewById(R.id.editText);
                 ed2=findViewById(R.id.editText2);
                 ed3=findViewById(R.id.editText3);
@@ -54,6 +55,7 @@ import android.widget.TextView;
 
                     }
                 });
+
                 b2.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
